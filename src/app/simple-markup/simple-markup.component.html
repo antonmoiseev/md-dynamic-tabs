@@ -1,0 +1,6 @@
+<md-tab-group>
+  <md-tab *ngFor="let tab of tabs">
+    <template md-tab-label>{{ tab.label }}</template>
+    <div [innerHTML]="tab.content"></div>
+  </md-tab>
+</md-tab-group>

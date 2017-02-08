@@ -1,0 +1,15 @@
+<md-tab-group>
+  <md-tab *ngFor="let tab of tabs">
+    <template md-tab-label>{{ tab.label }}</template>
+    <ng-container [ngTemplateOutlet]="tab.templateRef"></ng-container>
+  </md-tab>
+</md-tab-group>
+
+<template #tab1>
+  <div>Tab 1 content</div>
+  <div>
+    <button md-raised-button color="accent">CLICK ME</button>
+  </div>
+</template>
+
+<template #tab2>Tab 2 content</template>

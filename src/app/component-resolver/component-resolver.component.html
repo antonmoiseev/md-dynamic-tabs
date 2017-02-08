@@ -1,0 +1,7 @@
+<md-tab-group (selectedIndexChange)="onTabChange($event)">
+  <md-tab *ngFor="let tab of tabs; let i = index">
+    <template md-tab-label>{{ tab.label }}</template>
+  </md-tab>
+</md-tab-group>
+
+<div #tabContent></div>
