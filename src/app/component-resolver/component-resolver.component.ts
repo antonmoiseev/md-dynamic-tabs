@@ -20,7 +20,7 @@ export class ComponentResolverComponent {
     { label: 'TAB 2' }
   ];
 
-  private tabContentComponents = [
+  private tabContentComponents : any[]= [
     Tab1ContentComponent,
     Tab2ContentComponent
   ];
